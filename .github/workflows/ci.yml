@@ -24,6 +24,6 @@ jobs:
       - uses: actions/checkout@v1
       - name: Run markdown lint
         run: |
-          npm install remark-lint-emphasis-marker
+          npm install remark-cli remark-preset-lint-consistent
           npx remark . --use remark-preset-lint-consistent --frail
           
